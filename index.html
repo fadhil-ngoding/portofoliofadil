@@ -1,29 +1,1118 @@
 <!DOCTYPE html>
+
 <html lang="id">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Portfolio | Fadil</title>
+<meta charset="UTF-8">
 
-    <!-- Bootstrap -->
-    <link
-        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-        rel="stylesheet"
-    >
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Bootstrap Icons -->
-    <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
-    >
+<title>Fadhil Hadira — Cinematic Portfolio</title>
 
-    <!-- Google Font -->
-    <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-        rel="stylesheet"
-    >
+<meta name="description" content="Fadhil Hadira — creative, motion, boxing, web. Cinematic scroll-motion portfolio.">
 
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css">
+
 </head>
+
+<body>
+
+
+<!-- LOADING SCREEN -->
+
+<div id="loader">
+
+  <div class="loader-word">FADHIL HADIRA</div>
+
+  <div class="loader-count">00</div>
+
+  <div class="loader-bar"><span></span></div>
+
+</div>
+
+
+<!-- CUSTOM CURSOR -->
+
+<div id="cursor">
+
+  <span class="cursor-label"></span>
+
+</div>
+
+
+<!-- NAVBAR -->
+
+<header id="navbar">
+
+  <div class="container">
+
+    <a href="#hero" class="nav-brand">FADHIL HADIRA</a>
+
+    <nav class="nav-links">
+
+      <a href="#hero" data-nav>HOME</a>
+
+      <a href="#about" data-nav>ABOUT</a>
+
+      <a href="#tentang" data-nav>TENTANG</a>
+
+      <a href="#boxing-section" data-nav>BOXING</a>
+
+      <a href="#movies" data-nav>MOVIES</a>
+
+      <a href="#projects" data-nav>PROJECT</a>
+
+      <a href="#music" data-nav>MY FAV SONG</a>
+
+      <a href="#contact" data-nav>CONTACT</a>
+
+    </nav>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+
+      <span></span>
+
+      <span></span>
+
+      <span></span>
+
+    </button>
+
+  </div>
+
+</header>
+
+
+<!-- MOBILE MENU -->
+
+<nav id="mobile-menu">
+
+  <a href="#hero" data-nav>Home</a>
+
+  <a href="#about" data-nav>About</a>
+
+  <a href="#tentang" data-nav>Tentang</a>
+
+  <a href="#boxing-section" data-nav>Boxing</a>
+
+  <a href="#movies" data-nav>Movies</a>
+
+  <a href="#projects" data-nav>Project</a>
+
+  <a href="#music" data-nav>My Fav Song</a>
+
+  <a href="#contact" data-nav>Contact</a>
+
+</nav>
+
+
+<!-- HERO -->
+
+<section id="hero">
+
+  <div id="hero-pin">
+
+    <canvas id="boxing-canvas"></canvas>
+
+    <div class="hero-fallback-glow"></div>
+
+    <div class="hero-overlay"></div>
+
+
+    <div class="hero-content">
+
+      <div class="hero-kicker">
+
+        <span></span>
+
+        PORTFOLIO / 2026
+
+      </div>
+
+      <h1>
+
+        FADHIL<br>
+
+        <span>HADIRA</span>
+
+      </h1>
+
+      <p>
+
+        Creative mind.
+
+        <br>
+
+        Motion, boxing & web.
+
+      </p>
+
+      <a href="#about" class="hero-scroll">
+
+        <span>SCROLL TO EXPLORE</span>
+
+        <i class="bi bi-arrow-down"></i>
+
+      </a>
+
+    </div>
+
+
+    <div class="hero-side-text">
+
+      <span>MEDAN — INDONESIA</span>
+
+      <span>SCROLL / EXPLORE</span>
+
+    </div>
+
+
+    <div class="hero-number">
+
+      01
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- ABOUT -->
+
+<section id="about" class="section section-dark">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <span class="section-index">01 / 08</span>
+
+      <span class="section-label">ABOUT ME</span>
+
+    </div>
+
+
+    <div class="about-grid">
+
+      <div class="about-image reveal">
+
+        <div class="image-frame">
+
+          <img
+
+            src="images/profile.png"
+
+            alt="Fadhil Hadira"
+
+          >
+
+        </div>
+
+      </div>
+
+
+      <div class="about-copy">
+
+        <div class="eyebrow reveal">
+
+          WHO I AM
+
+        </div>
+
+
+        <h2 class="reveal">
+
+          I CREATE.
+
+          <br>
+
+          I MOVE.
+
+          <br>
+
+          I EXPLORE.
+
+        </h2>
+
+
+        <p class="reveal">
+
+          Saya Fadhil Hadira, seorang pelajar yang tertarik
+
+          dengan dunia kreatif, olahraga, teknologi dan
+
+          pengembangan website.
+
+        </p>
+
+
+        <p class="reveal">
+
+          Bagi saya, setiap project adalah tempat untuk
+
+          bereksperimen, belajar dan membuat sesuatu yang
+
+          punya karakter.
+
+        </p>
+
+
+        <div class="about-meta reveal">
+
+          <div>
+
+            <span>BASED IN</span>
+
+            <strong>MEDAN, INDONESIA</strong>
+
+          </div>
+
+          <div>
+
+            <span>FOCUS</span>
+
+            <strong>WEB / MOTION / CREATIVE</strong>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- TENTANG -->
+
+<section id="tentang" class="section section-light">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <span class="section-index">02 / 08</span>
+
+      <span class="section-label">TENTANG SAYA</span>
+
+    </div>
+
+
+    <div class="big-statement reveal">
+
+      <p>
+
+        Saya suka menggabungkan
+
+        <span>teknologi</span>,
+
+        <span>visual</span>,
+
+        <span>olahraga</span>
+
+        dan kreativitas menjadi sebuah karya.
+
+      </p>
+
+    </div>
+
+
+    <div class="info-grid">
+
+      <div class="info-card reveal">
+
+        <span class="info-number">01</span>
+
+        <h3>WEB DEVELOPMENT</h3>
+
+        <p>
+
+          HTML, CSS, JavaScript, PHP dan berbagai
+
+          teknologi web untuk membuat website interaktif.
+
+        </p>
+
+      </div>
+
+
+      <div class="info-card reveal">
+
+        <span class="info-number">02</span>
+
+        <h3>BOXING</h3>
+
+        <p>
+
+          Salah satu aktivitas yang saya sukai.
+
+          Disiplin, latihan dan konsistensi.
+
+        </p>
+
+      </div>
+
+
+      <div class="info-card reveal">
+
+        <span class="info-number">03</span>
+
+        <h3>CREATIVE</h3>
+
+        <p>
+
+          Eksplorasi visual, motion, editing dan
+
+          berbagai eksperimen digital.
+
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- BOXING -->
+
+<section id="boxing-section" class="section section-dark boxing-section">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <span class="section-index">03 / 08</span>
+
+      <span class="section-label">BOXING</span>
+
+    </div>
+
+
+    <div class="boxing-intro">
+
+      <div>
+
+        <div class="eyebrow reveal">
+
+          MY PASSION
+
+        </div>
+
+        <h2 class="reveal">
+
+          FIGHT.
+
+          <br>
+
+          TRAIN.
+
+          <br>
+
+          REPEAT.
+
+        </h2>
+
+      </div>
+
+
+      <p class="reveal">
+
+        Boxing mengajarkan saya tentang disiplin,
+
+        fokus dan bagaimana terus bergerak walaupun
+
+        keadaan tidak selalu mudah.
+
+      </p>
+
+    </div>
+
+
+    <div class="boxing-showcase">
+
+      <div class="boxing-video-card reveal">
+
+        <video
+
+          src="videos/boxing-1.mp4"
+
+          poster="images/boxing-1.jpg"
+
+          muted
+
+          loop
+
+          playsinline
+
+          preload="metadata"
+
+        ></video>
+
+        <div class="video-overlay">
+
+          <span>BOXING / 01</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="boxing-video-card reveal">
+
+        <video
+
+          src="videos/boxing-2.mp4"
+
+          poster="images/boxing-2.jpg"
+
+          muted
+
+          loop
+
+          playsinline
+
+          preload="metadata"
+
+        ></video>
+
+        <div class="video-overlay">
+
+          <span>BOXING / 02</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MOVIES -->
+
+<section id="movies" class="section section-light">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <span class="section-index">04 / 08</span>
+
+      <span class="section-label">MOVIES</span>
+
+    </div>
+
+
+    <div class="movies-heading">
+
+      <h2 class="reveal">
+
+        MOVIES
+
+        <span>I LIKE.</span>
+
+      </h2>
+
+      <p class="reveal">
+
+        Beberapa film yang saya suka dan
+
+        menjadi bagian dari inspirasi visual saya.
+
+      </p>
+
+    </div>
+
+
+    <div class="movie-track" id="movieTrack">
+
+
+      <article class="movie-card reveal">
+
+        <div class="movie-image">
+
+          <img
+
+            src="images/movie-1.jpg"
+
+            alt="Movie 1"
+
+          >
+
+        </div>
+
+        <div class="movie-info">
+
+          <span>01</span>
+
+          <h3>MOVIE ONE</h3>
+
+        </div>
+
+      </article>
+
+
+      <article class="movie-card reveal">
+
+        <div class="movie-image">
+
+          <img
+
+            src="images/movie-2.jpg"
+
+            alt="Movie 2"
+
+          >
+
+        </div>
+
+        <div class="movie-info">
+
+          <span>02</span>
+
+          <h3>MOVIE TWO</h3>
+
+        </div>
+
+      </article>
+
+
+      <article class="movie-card reveal">
+
+        <div class="movie-image">
+
+          <img
+
+            src="images/movie-3.jpg"
+
+            alt="Movie 3"
+
+          >
+
+        </div>
+
+        <div class="movie-info">
+
+          <span>03</span>
+
+          <h3>MOVIE THREE</h3>
+
+        </div>
+
+      </article>
+
+
+      <article class="movie-card reveal">
+
+        <div class="movie-image">
+
+          <img
+
+            src="images/movie-4.jpg"
+
+            alt="Movie 4"
+
+          >
+
+        </div>
+
+        <div class="movie-info">
+
+          <span>04</span>
+
+          <h3>MOVIE FOUR</h3>
+
+        </div>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- PROJECT -->
+
+<section id="projects" class="section section-dark">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <span class="section-index">05 / 08</span>
+
+      <span class="section-label">PROJECT</span>
+
+    </div>
+
+
+    <div class="projects-heading">
+
+      <div>
+
+        <div class="eyebrow reveal">
+
+          SELECTED WORK
+
+        </div>
+
+        <h2 class="reveal">
+
+          THINGS
+
+          <br>
+
+          I'VE BUILT.
+
+        </h2>
+
+      </div>
+
+
+      <p class="reveal">
+
+        Beberapa project website yang pernah
+
+        saya kerjakan dan eksplorasi.
+
+      </p>
+
+    </div>
+
+
+    <div class="project-grid">
+
+
+      <article class="project-card project-card-large reveal">
+
+        <a href="#" class="project-link">
+
+          <div class="project-image">
+
+            <img
+
+              src="images/project-1.jpg"
+
+              alt="Project 1"
+
+            >
+
+          </div>
+
+          <div class="project-bottom">
+
+            <div>
+
+              <span>PROJECT / 01</span>
+
+              <h3>WEB PROJECT</h3>
+
+            </div>
+
+            <i class="bi bi-arrow-up-right"></i>
+
+          </div>
+
+        </a>
+
+      </article>
+
+
+      <article class="project-card reveal">
+
+        <a href="#" class="project-link">
+
+          <div class="project-image">
+
+            <img
+
+              src="images/project-2.jpg"
+
+              alt="Project 2"
+
+            >
+
+          </div>
+
+          <div class="project-bottom">
+
+            <div>
+
+              <span>PROJECT / 02</span>
+
+              <h3>CREATIVE PROJECT</h3>
+
+            </div>
+
+            <i class="bi bi-arrow-up-right"></i>
+
+          </div>
+
+        </a>
+
+      </article>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- MUSIC -->
+
+<section id="music" class="section section-light">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <span class="section-index">06 / 08</span>
+
+      <span class="section-label">MY FAV SONG</span>
+
+    </div>
+
+
+    <div class="music-heading">
+
+      <div>
+
+        <div class="eyebrow reveal">
+
+          MUSIC
+
+        </div>
+
+        <h2 class="reveal">
+
+          SONGS
+
+          <br>
+
+          ON REPEAT.
+
+        </h2>
+
+      </div>
+
+    </div>
+
+
+    <div class="music-player" id="musicPlayer">
+
+
+      <div class="music-main">
+
+        <div class="music-disc">
+
+          <div class="disc-center"></div>
+
+        </div>
+
+
+        <div class="music-current">
+
+          <span class="music-label">NOW PLAYING</span>
+
+          <h3 id="musicTitle">The Cure</h3>
+
+          <p id="musicArtist">My Favorite Song</p>
+
+        </div>
+
+
+        <button
+
+          id="musicPlay"
+
+          class="music-play"
+
+          aria-label="Play music"
+
+        >
+
+          <i class="bi bi-play-fill"></i>
+
+        </button>
+
+      </div>
+
+
+      <div class="music-progress">
+
+        <span id="musicCurrentTime">0:00</span>
+
+        <input
+
+          type="range"
+
+          id="musicProgress"
+
+          min="0"
+
+          max="100"
+
+          value="0"
+
+        >
+
+        <span id="musicDuration">0:00</span>
+
+      </div>
+
+
+      <div class="music-list">
+
+
+        <button
+
+          class="music-item active"
+
+          data-src="music/the-cure.mp3"
+
+          data-title="The Cure"
+
+          data-artist="My Favorite Song"
+
+        >
+
+          <span>01</span>
+
+          <strong>THE CURE</strong>
+
+          <i class="bi bi-play"></i>
+
+        </button>
+
+
+        <button
+
+          class="music-item"
+
+          data-src="music/drop-dead.mp3"
+
+          data-title="Drop Dead"
+
+          data-artist="My Favorite Song"
+
+        >
+
+          <span>02</span>
+
+          <strong>DROP DEAD</strong>
+
+          <i class="bi bi-play"></i>
+
+        </button>
+
+
+        <button
+
+          class="music-item"
+
+          data-src="music/style.mp3"
+
+          data-title="Style"
+
+          data-artist="My Favorite Song"
+
+        >
+
+          <span>03</span>
+
+          <strong>STYLE</strong>
+
+          <i class="bi bi-play"></i>
+
+        </button>
+
+
+        <button
+
+          class="music-item"
+
+          data-src="music/the-one-that-got-away.mp3"
+
+          data-title="The One That Got Away"
+
+          data-artist="My Favorite Song"
+
+        >
+
+          <span>04</span>
+
+          <strong>THE ONE THAT GOT AWAY</strong>
+
+          <i class="bi bi-play"></i>
+
+        </button>
+
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact" class="section section-dark contact-section">
+
+  <div class="container">
+
+    <div class="section-head reveal">
+
+      <span class="section-index">07 / 08</span>
+
+      <span class="section-label">CONTACT</span>
+
+    </div>
+
+
+    <div class="contact-content">
+
+      <div>
+
+        <div class="eyebrow reveal">
+
+          LET'S CONNECT
+
+        </div>
+
+        <h2 class="reveal">
+
+          HAVE A
+
+          <br>
+
+          PROJECT?
+
+        </h2>
+
+      </div>
+
+
+      <div class="contact-right reveal">
+
+        <p>
+
+          Jika ingin berkolaborasi, ngobrol tentang
+
+          website, design atau project lainnya,
+
+          silakan hubungi saya.
+
+        </p>
+
+
+        <a
+
+          href="mailto:your@email.com"
+
+          class="contact-email"
+
+        >
+
+          your@email.com
+
+          <i class="bi bi-arrow-up-right"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer id="footer">
+
+  <div class="container">
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+
+        FADHIL HADIRA
+
+      </div>
+
+
+      <div class="footer-links">
+
+        <a href="#hero">HOME</a>
+
+        <a href="#about">ABOUT</a>
+
+        <a href="#boxing-section">BOXING</a>
+
+        <a href="#projects">PROJECT</a>
+
+      </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+      <span>
+
+        © <span id="footerYear"></span> FADHIL HADIRA
+
+      </span>
+
+      <span>
+
+        MEDAN, INDONESIA
+
+      </span>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+<!-- LIBRARIES -->
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script src="js/script.js"></script>
+
+</body>
+
+</html>
