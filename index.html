@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fadhil Hadira — Cinematic Portfolio</title>
+<meta name="description" content="Fadhil Hadira — creative, motion, boxing, web. Cinematic scroll-motion portfolio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- LOADING SCREEN -->
+<div id="loader">
+  <div class="loader-word">FADHIL HADIRA</div>
+  <div class="loader-count">00</div>
+  <div class="loader-bar"><span></span></div>
+</div>
+
+<!-- CUSTOM CURSOR (desktop only) -->
+<div id="cursor"><span class="cursor-label"></span></div>
+
+<!-- NAVBAR -->
+<header id="navbar">
+  <div class="container">
+    <a href="#hero" class="nav-brand">FADHIL HADIRA</a>
+    <nav class="nav-links">
+      <a href="#hero" data-nav>HOME</a>
+      <a href="#about" data-nav>ABOUT</a>
+      <a href="#tentang" data-nav>TENTANG</a>
+      <a href="#boxing-section" data-nav>BOXING</a>
+      <a href="#movies" data-nav>MOVIES</a>
+      <a href="#projects" data-nav>PROJECT</a>
+      <a href="#music" data-nav>MY FAV SONG</a>
+      <a href="#contact" data-nav>CONTACT</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<!-- MOBILE MENU -->
+<nav id="mobile-menu">
+  <a href="#hero" data-nav>Home</a>
+  <a href="#about" data-nav>About</a>
+  <a href="#tentang" data-nav>Tentang</a>
+  <a href="#boxing-section" data-nav>Boxing</a>
+  <a href="#movies" data-nav>Movies</a>
+  <a href="#projects" data-nav>Project</a>
+  <a href="#music" data-nav>My Fav Song</a>
+  <a href="#contact" data-nav>Contact</a>
+</nav>
+
+<!-- HERO — BOXING FRAME-BY-FRAME SCROLL ANIMATION -->
+<section id="hero">
+  <div id="hero-pin">
+    <canvas id="boxing-canvas"></canvas>
+    <div class="hero-fallback-glow"></div>
+    <div class="hero-vignette"></div>
+    <div class="hero-content">
+      <h1 class="hero-name" data-text="FADHIL HADIRA">
+        <span class="hn-line">FADHIL</span>
+        <span class="hn-line hn-accent">HADIRA</span>
+      </h1>
+      <p class="hero-sub"><span>CREATIVE</span><i></i><span>MOTION</span><i></i><span>BOXING</span><i></i><span>WEB</span></p>
+    </div>
+    <div class="scroll-cue">
+      <span>SCROLL TO EXPLORE</span>
+      <span class="line"></span>
+    </div>
+  </div>
+</section>
+
+<!-- WAVE DIVIDER + RUNNING MARQUEE (seamless ember gradient, no hard seam) -->
+<div class="wave-divider" aria-hidden="true">
+  <svg viewBox="0 0 1440 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+    <defs>
+      <linearGradient id="waveGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+        <stop offset="0%" stop-color="#7a3412"/>
+        <stop offset="45%" stop-color="#3a1508"/>
+        <stop offset="100%" stop-color="#150c07"/>
+      </linearGradient>
+    </defs>
+    <path class="wave-path" d="M0,64 C220,120 420,10 720,38 C1020,66 1220,112 1440,52 L1440,140 L0,140 Z" fill="url(#waveGrad)"></path>
+  </svg>
+</div>
+<div class="marquee-strip">
+  <div class="marquee-track">
+    <span>CREATIVE</span><span class="dot">•</span><span>MOTION</span><span class="dot">•</span><span>BOXING</span><span class="dot">•</span><span>fadil</span><span class="dot">•</span><span>DEVELOPER</span><span class="dot">•</span>
+    <span>CREATIVE</span><span class="dot">•</span><span>MOTION</span><span class="dot">•</span><span>BOXING</span><span class="dot">•</span><span>fadil</span><span class="dot">•</span><span>DEVELOPER</span><span class="dot">•</span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section id="about" class="section">
+  <div class="container">
+    <div class="eyebrow-num reveal">About</div>
+    <h2 class="big-heading reveal">ABOUT ME</h2>
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-lede reveal">Halo, saya Fadhil Hadira. Saya senang mengeksplorasi kreativitas lewat motion, website, musik, film, dan tinju — dua dunia yang menurut saya sama-sama soal fokus, ritme, dan ketepatan gerak.</p>
+        <p class="about-lede2 reveal">Di atas ring, saya berlatih disiplin dan strategi. Di depan layar, saya menyalurkan itu semua lewat sinematografi, editing, dan desain interaktif — membangun sesuatu yang bergerak, punya ritme, dan enak dinikmati.</p>
+        <div class="about-skills reveal">
+          <span>Tinju</span><span>Sinematografi</span><span>Motion Design</span><span>Pengembangan Website</span><span>Editing Film</span>
+        </div>
+      </div>
+      <div class="about-side reveal">
+        <div class="badge-stage" id="badgeStage">
+          <div class="badge-string" id="badgeString">
+            <svg class="badge-string-svg" viewBox="0 0 40 60" preserveAspectRatio="none"><path id="badgeStringPath" d="M20,0 L20,60"/></svg>
+          </div>
+          <div class="badge-card" id="badgeCard">
+            <div class="badge-clip"></div>
+            <div class="badge-photo-full" id="badgePhoto" style="background-image:url('assets/images/profile.png');"></div>
+            <div class="badge-card-shade"></div>
+            <div class="badge-card-content">
+              <span class="badge-label">HELLO, I'M</span>
+              <h3 class="badge-name"><span class="tw-text"></span><span class="tw-cursor">|</span></h3>
+              <span class="badge-role">BOXER · FILMMAKER · DEVELOPER</span>
+            </div>
+          </div>
+        </div>
+        <p class="badge-hint" id="badgeHint">tarik kartu namanya →</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TENTANG -->
+<section id="tentang" class="section">
+  <div class="container">
+    <div class="eyebrow-num reveal">Tentang</div>
+    <h2 class="big-heading reveal" style="margin-bottom:2rem;">TENTANG</h2>
+    <p class="tentang-intro reveal">Saya tertarik dengan dunia <b>digital</b>, <b>motion</b>, website, olahraga boxing, film, dan musik — dan suka menggabungkan semuanya jadi sesuatu yang terlihat menarik dan interaktif.</p>
+
+    <div class="tentang-points">
+      <div class="tentang-point reveal">
+        <span class="tp-num">01</span>
+        <h4>Digital &amp; Motion</h4>
+        <p>Membangun website dan animasi interaktif yang terasa hidup saat digulir, bukan sekadar statis.</p>
+      </div>
+      <div class="tentang-point reveal">
+        <span class="tp-num">02</span>
+        <h4>Boxing</h4>
+        <p>Melatih fokus, disiplin, dan ketepatan gerak di atas ring — nilai yang saya bawa juga ke pekerjaan kreatif.</p>
+      </div>
+      <div class="tentang-point reveal">
+        <span class="tp-num">03</span>
+        <h4>Film &amp; Musik</h4>
+        <p>Terinspirasi dari ritme sinema dan musik untuk membentuk gaya visual dan timing animasi.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BOXING SECTION — auto sliding showcase, 3 slides visible, crossfade + slide -->
+<section id="boxing-section">
+  <div class="bx-particles" id="bxParticles"></div>
+  <div class="bx-glow"></div>
+  <div class="bx-inner container">
+    <div class="eyebrow-num reveal">Boxing is one of my hobbies</div>
+    <h2 class="bx-title reveal">BOXING</h2>
+    <p class="bx-tagline reveal">DISCIPLINE.<br>POWER.<br>MOVEMENT.</p>
+    <p class="bx-address reveal">
+      BOXING REVOLUTION<br>
+      Jl. Suluh, Sidorejo Hilir, Kec. Medan Tembung,<br>
+      Kota Medan, Sumatera Utara 20222
+    </p>
+
+    <div class="bx-showcase reveal" id="bxShowcase">
+      <div class="bx-track" id="bxTrack">
+        <div class="bx-slide" data-type="video" data-ratio="9:16">
+          <div class="bx-media">
+            <video playsinline loop preload="none">
+              <source src="assets/videos/boxing-1.mp4" type="video/mp4">
+            </video>
+            <button class="bx-play-toggle" type="button" aria-label="Putar video">
+              <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+              <svg class="ic-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+            </button>
+            <div class="bx-slide-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              <span>VIDEO · 9:16</span>
+              <em>assets/videos/boxing-1.mp4</em>
+            </div>
+          </div>
+          <span class="bx-tag">SPARRING — VERTICAL</span>
+        </div>
+
+        <div class="bx-slide" data-type="image" data-ratio="9:16">
+          <div class="bx-media">
+            <img src="assets/images/boxing-1.jpg" alt="Boxing photo 1" onerror="this.style.display='none'">
+            <div class="bx-slide-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>FOTO · 9:16</span>
+              <em>assets/images/boxing-1.jpg</em>
+            </div>
+          </div>
+          <span class="bx-tag">RING PORTRAIT</span>
+        </div>
+
+        <div class="bx-slide" data-type="video" data-ratio="16:9">
+          <div class="bx-media">
+            <video playsinline loop preload="none">
+              <source src="assets/videos/boxing-2.mp4" type="video/mp4">
+            </video>
+            <button class="bx-play-toggle" type="button" aria-label="Putar video">
+              <svg class="ic-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+              <svg class="ic-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zM14 5h4v14h-4z" fill="currentColor"/></svg>
+            </button>
+            <div class="bx-slide-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><path d="M23 7l-7 5 7 5V7z"/><rect x="1" y="5" width="15" height="14" rx="2"/></svg>
+              <span>VIDEO · 16:9</span>
+              <em>assets/videos/boxing-2.mp4</em>
+            </div>
+          </div>
+          <span class="bx-tag">TRAINING SESSION</span>
+        </div>
+
+        <div class="bx-slide" data-type="image" data-ratio="16:9">
+          <div class="bx-media">
+            <img src="assets/images/boxing-2.jpg" alt="Boxing photo 2" onerror="this.style.display='none'">
+            <div class="bx-slide-placeholder">
+              <svg viewBox="0 0 24 24" fill="none" stroke-width="1.4"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="9" cy="9" r="2"/><path d="M21 15l-5-5L5 21"/></svg>
+              <span>FOTO · 16:9</span>
+              <em>assets/images/boxing-2.jpg</em>
+            </div>
+          </div>
+          <span class="bx-tag">WIDE ACTION</span>
+        </div>
+      </div>
+
+      <button class="bx-arrow bx-prev" id="bxPrev" aria-label="Sebelumnya">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="bx-arrow bx-next" id="bxNext" aria-label="Berikutnya">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+
+      <div class="bx-dots" id="bxDots"></div>
+    </div>
+  </div>
+</section>
+
+<!-- MOVIES -->
+<section id="movies">
+  <div class="movie-head container">
+    <div>
+      <div class="eyebrow-num reveal">Movies</div>
+      <h2 class="big-heading reveal">FAV MOVIES</h2>
+    </div>
+    <div class="movie-arrows reveal">
+      <button class="m-arrow" id="movPrev" aria-label="Sebelumnya">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <button class="m-arrow" id="movNext" aria-label="Berikutnya">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.8"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+  </div>
+  <div class="movie-track-wrap">
+    <div class="movie-track" id="movieTrack">
+
+      <article class="movie-card reveal" style="--card-grad:linear-gradient(160deg,#3a1e0f,#0a0908);">
+        <div class="movie-poster">
+          <img src="assets/images/movie-1.jpg" alt="Avengers" onerror="this.style.display='none'">
+          <span class="m-glyph">01</span>
+          <div class="movie-meta">
+            <div class="movie-title">Avengers</div>
+            <div class="movie-desc">Earth's mightiest heroes, one team.</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card reveal" style="--card-grad:linear-gradient(160deg,#1c2a3a,#0a0908);">
+        <div class="movie-poster">
+          <img src="assets/images/movie-2.jpg" alt="Thor: Ragnarok" onerror="this.style.display='none'">
+          <span class="m-glyph">02</span>
+          <div class="movie-meta">
+            <div class="movie-title">Thor: Ragnarok</div>
+            <div class="movie-desc">Chaos, color, and cosmic comedy.</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card reveal" style="--card-grad:linear-gradient(160deg,#3a1030,#0a0908);">
+        <div class="movie-poster">
+          <img src="assets/images/movie-3.jpg" alt="Spider-Man" onerror="this.style.display='none'">
+          <span class="m-glyph">03</span>
+          <div class="movie-meta">
+            <div class="movie-title">Spider-Man</div>
+            <div class="movie-desc">Friendly neighborhood, big heart.</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="movie-card reveal" style="--card-grad:linear-gradient(160deg,#123a2a,#0a0908);">
+        <div class="movie-poster">
+          <img src="assets/images/movie-4.jpg" alt="Guardians of the Galaxy" onerror="this.style.display='none'">
+          <span class="m-glyph">04</span>
+          <div class="movie-meta">
+            <div class="movie-title">Guardians of the Galaxy</div>
+            <div class="movie-desc">A ragtag crew, a killer soundtrack.</div>
+          </div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects" class="section">
+  <div class="container">
+    <div class="eyebrow-num reveal">Project</div>
+    <h2 class="big-heading reveal" style="margin-bottom:3rem;">PROJECT</h2>
+
+    <!-- Ganti href="#" di bawah dengan link live project kamu masing-masing -->
+   <a class="project-row reveal" href="https://fadhil-ngoding.github.io/LANDING/" target="_blank" rel="noopener">
+  <span class="project-num">01</span>
+  <span class="project-name">WEB KALIMANIEZ MASA STUDIO</span>
+  <span class="project-tag">Websites &amp; interfaces<br><em>klik untuk kunjungi →</em></span>
+  <div class="project-preview has-thumb">
+    <img src="assets/images/project-1.jpg" alt="Web Design Project" onerror="this.style.display='none'">
+    <span class="pv-label">PAS FOTO</span>
+  </div>
+</a>
+    </a>
+    <a class="project-row reveal" href="#" target="_blank" rel="noopener">
+      <span class="project-num">02</span>
+      <span class="project-name">CONTOH WEB UMKM NANTI LETAK DI SINI</span>
+      <span class="project-tag">Scroll &amp; frame animation<br><em>klik untuk kunjungi →</em></span>
+      <div class="project-preview has-thumb">
+        <img src="assets/images/project-2.jpg" alt="Motion Project" onerror="this.style.display='none'">
+        <span class="pv-label">INI CONTOH DOANG NANTI LETAK DISINI WEB UMKM NYA</span>
+      </div>
+    </a>
+  </div>
+</section>
+
+<!-- MY FAV SONG -->
+<section id="music" class="section">
+  <div class="container">
+    <div class="eyebrow-num reveal">Music</div>
+    <h2 class="big-heading reveal" style="margin-bottom:3.5rem;">MY FAV SONG</h2>
+
+    <div class="player-shell reveal">
+      <div class="vinyl" id="vinyl"></div>
+      <div class="player-main">
+        <div class="track-list" id="trackList">
+          <div class="track active" data-src="assets/music/the-cure.mp3" data-title="The Cure" data-artist="Olivia Rodrigo">
+            <button class="t-play">▶</button>
+            <div class="t-info"><div class="t-title">The Cure</div><div class="t-artist">Olivia Rodrigo</div></div>
+            <div class="eq"><span></span><span></span><span></span></div>
+          </div>
+          <div class="track" data-src="assets/music/drop-dead.mp3" data-title="Drop Dead" data-artist="Olivia Rodrigo">
+            <button class="t-play">▶</button>
+            <div class="t-info"><div class="t-title">Drop Dead</div><div class="t-artist">Olivia Rodrigo</div></div>
+            <div class="eq"><span></span><span></span><span></span></div>
+          </div>
+          <div class="track" data-src="assets/music/style.mp3" data-title="Style" data-artist="Taylor Swift">
+            <button class="t-play">▶</button>
+            <div class="t-info"><div class="t-title">Style</div><div class="t-artist">Taylor Swift</div></div>
+            <div class="eq"><span></span><span></span><span></span></div>
+          </div>
+          <div class="track" data-src="assets/music/the-one-that-got-away.mp3" data-title="The One That Got Away" data-artist="Katy Perry">
+            <button class="t-play">▶</button>
+            <div class="t-info"><div class="t-title">The One That Got Away</div><div class="t-artist">Katy Perry</div></div>
+            <div class="eq"><span></span><span></span><span></span></div>
+          </div>
+        </div>
+
+        <div class="player-progress">
+          <div class="progress-bar" id="progressBar"><span id="progressFill"></span></div>
+          <div class="progress-labels">
+            <span id="timeCurrent">0:00</span>
+            <span id="timeTotal">0:00</span>
+          </div>
+        </div>
+        <p class="player-note" id="playerNote">Letakkan file MP3 di assets/music/ dengan nama file yang sesuai untuk mengaktifkan pemutar lagu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="section">
+  <div class="container">
+    <div class="eyebrow-num reveal">Contact</div>
+    <h2 class="contact-cta reveal">LET'S CREATE<br>SOMETHING<br><span class="accent">INTERESTING.</span></h2>
+
+    <div class="contact-links reveal">
+      <a class="contact-link" href="https://wa.me/6282184749423" target="_blank" rel="noopener" data-cursor="OPEN">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>
+        WhatsApp — 0821 8474 9423
+      </a>
+      <a class="contact-link" href="https://www.instagram.com/fad1l_5?stkn=Z2EwY2h2dTV5Ynpy" target="_blank" rel="noopener" data-cursor="OPEN">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        Instagram
+      </a>
+      <a class="contact-link" href="https://www.tiktok.com/@fadhills66?_r=1&_t=ZS-9A4NxH0O12d" target="_blank" rel="noopener" data-cursor="OPEN">
+        <svg viewBox="0 0 24 24" fill="none" stroke-width="1.6"><path d="M16 3v10.5a3.5 3.5 0 1 1-3.5-3.5"/><path d="M16 3c.3 2.4 2 4 4.5 4.2"/></svg>
+        TikTok
+      </a>
+    </div>
+
+    <p class="contact-meta reveal">Fadhil Hadira — always open for collaboration.</p>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer id="footer">
+  <div class="container" style="display:flex;justify-content:space-between;align-items:flex-end;width:100%;">
+    <div>
+      <div class="footer-brand">FADHIL HADIRA</div>
+      <div class="footer-tag">KEEP MOVING.</div>
+    </div>
+    <div class="footer-year" id="footerYear"></div>
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/dist/lenis.min.js"></script>
+<script src="js/script.js"></script>
+</body>
+</html>
