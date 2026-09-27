@@ -1,0 +1,14 @@
+FOLDER INI: assets/videos/
+
+Section BOXING butuh 2 video, dengan rasio yang BERBEDA (sesuai revisi terbaru):
+
+  boxing-1.mp4   → rasio 9:16  (vertikal / portrait, contoh: video sparring dari HP)
+  boxing-2.mp4   → rasio 16:9  (horizontal / landscape, contoh: video latihan dari kamera)
+
+Nama file harus persis "boxing-1.mp4" dan "boxing-2.mp4". Slide di carousel
+otomatis menyesuaikan bentuk kartunya mengikuti rasio asli file (portrait
+jadi kartu tinggi & ramping, landscape jadi kartu lebar) — tidak perlu ubah
+kode apa pun, cukup timpa file di sini.
+
+Video akan otomatis muted, loop, dan play saat slide-nya berada di tengah
+(posisi aktif) pada carousel.

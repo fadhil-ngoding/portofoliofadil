@@ -1,0 +1,28 @@
+FOLDER INI: assets/images/
+
+── BOXING (section Boxing — carousel showcase) ──────────────────────────
+  boxing-1.jpg   → rasio 9:16   (foto vertikal / portrait)
+  boxing-2.jpg   → rasio 16:9   (foto horizontal / landscape)
+
+── MOVIES (4 poster film favorit) ───────────────────────────────────────
+  movie-1.jpg    → rasio 2:3 (poster film #1)
+  movie-2.jpg    → rasio 2:3 (poster film #2)
+  movie-3.jpg    → rasio 2:3 (poster film #3)
+  movie-4.jpg    → rasio 2:3 (poster film #4)
+  (Judul/deskripsi tiap poster bisa diganti langsung di index.html,
+   cari <section id="movies"> lalu ubah teks movie-title & movie-desc.)
+
+── PROJECT (2 screenshot website project kamu) ──────────────────────────
+  project-1.jpg  → rasio 16:9
+  project-2.jpg  → rasio 16:9
+  (Jangan lupa juga ganti href="#" pada dua <a class="project-row"> di
+   index.html dengan link live project kamu masing-masing.)
+
+── ABOUT (foto profil di badge) ─────────────────────────────────────────
+  profile.png    → rasio 3:4 (potret, ditampilkan statis di kartu About —
+                    tidak ada tombol upload/ganti di tampilan publik,
+                    cukup timpa file ini langsung untuk mengganti foto)
+
+Semua nama file harus persis seperti di atas (huruf kecil semua, pakai
+tanda "-"). Begitu file diletakkan di sini, gambar otomatis tampil —
+tidak perlu ubah kode apa pun.

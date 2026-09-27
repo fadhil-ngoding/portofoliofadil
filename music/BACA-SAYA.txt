@@ -1,0 +1,15 @@
+FOLDER INI: assets/music/
+
+Taruh 4 file MP3 lagu favorit kamu di sini dengan nama persis:
+
+  the-cure.mp3
+  drop-dead.mp3
+  style.mp3
+  the-one-that-got-away.mp3
+
+Judul lagu & nama artis yang tampil di player bisa diganti langsung di
+index.html, cari <section id="music"> lalu ubah teks di dalam .t-title
+dan .t-artist untuk tiap <div class="track">.
+
+Selama file MP3 belum ada, player tetap tampil tapi akan menampilkan
+pesan kecil "file belum ditemukan" saat lagu itu diklik.
